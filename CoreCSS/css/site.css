@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Rubik:wght@300;600;700&display=swap');
+
+html{
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+}
+
+img{
+    width: 100%;
+    vertical-align: bottom;
+}
+
+body{
+    font-size: 1rem;
+}
+
+main{
+    text-align: center;
+}
+
+h1{
+    font-style: oblique;
+    font-size: 4rem;
+    text-transform:lowercase;
+    margin: 0px;
+}
+
+p{
+    line-height: 1.5rem;
+    text-indent: 2rem;
+    font-size: 1.5rem; 
+}
+
+.emphasis{
+    color:coral;
+    font-size: 1rem;
+    font-style: oblique;
+    font-weight: 600;
+    text-decoration-line:underline;
+    text-decoration-style: wavy;
+}
+
+body main span.emphasis{
+    color: darkblue;
+}
+
+/* #first-lorem{
+    font-size: 50px;
+} */
+
+.first-character{
+    color:cadetblue;
+    font-size: 1.75rem;
+    font-family: 'Dancing Script', cursive;
+}
+
+/* p.smaller{
+    font-size: .5em;
+} */
+
+.key-info{
+    text-decoration-line:underline;
+    text-decoration-color:rgb(255, 0, 0);
+    text-decoration-style: dashed;
+}
+
+.ninja{
+    /* visibility: coll; */
+    display:inline-block;
+    border: 1px solid black;
+    width: 30%;
+    font-size: 0;
+    margin-bottom: 10px;
+    margin-top: 100px;
+}
+
+.profilepic{
+    display: inline-block;
+    width: 7%;
+    border-radius: 50%;
+    border-style:dotted;
+    border-color: green;
+}
+
+.anotherninja{
+    display: inline-block;
+    border: 1px solid rgb(255, 0, 0);
+    border-style: groove;
+    border-width: 5px;
+    width: 30%;
+    min-width: 200px;
+    margin-top: 100px;
+    padding: 5px;
+}
+
+.anotherninja.highlight{
+    min-height: 220px;
+}
