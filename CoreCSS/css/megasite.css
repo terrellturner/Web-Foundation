@@ -1,0 +1,28 @@
+body {
+    font-size: 18px;
+}
+
+h1{
+    font-size: 40px;
+}
+
+#firstchara{
+    font-size: 50px;
+}
+
+.starting-chara{
+    font-size: 40px;
+}
+
+.bolded-chara.mid-paragraph{
+    font-weight: bold;
+    color: blueviolet;
+}
+
+.sample-copy{
+    font-size: 24px;
+}
+
+footer.sample-copy{
+    color: red;
+}
