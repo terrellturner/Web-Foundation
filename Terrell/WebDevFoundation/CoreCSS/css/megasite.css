@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,300&display=swap');
+
+html{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-size: 1rem;
+}
+
+h1{
+    font-size: 2rem;
+    font-family: 'Cormorant', serif;
+    font-variant: small-caps;
+}
+
+#firstchara{
+    font-size: 2rem;
+}
+
+.starting-chara{
+    font-size: 5rem;
+}
+
+.bolded-chara.mid-paragraph{
+    font-weight: bold;
+    color: blueviolet;
+}
+
+.sample-copy{
+    font-size: 2rem;
+}
+
+.relative-test{
+    font-size: .5rem;
+}
+
+footer.sample-copy{
+    color: red;
+    font-size: 0.7rem;
+    font-style: italic;
+    text-align:center;
+    text-decoration-line: line-through;
+    text-decoration-color: aqua;
+    text-decoration-style: dotted;
+}
