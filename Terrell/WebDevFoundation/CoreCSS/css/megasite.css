@@ -3,16 +3,24 @@
 html{
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5rem;
 }
 
 body {
     font-size: 1rem;
 }
 
-h1{
+h1,h2{
     font-size: 2rem;
     font-family: 'Cormorant', serif;
     font-variant: small-caps;
+    text-align: center;
+}
+
+p{
+    text-indent: 2rem;
+    text-align: center;
+    text-transform: capitalize;
 }
 
 #firstchara{
@@ -28,12 +36,61 @@ h1{
     color: blueviolet;
 }
 
-.sample-copy{
+.sample-copy {
     font-size: 2rem;
 }
 
 .relative-test{
-    font-size: .5rem;
+    font-size: .5em;
+}
+
+.relative-test-big {
+    font-size: 1.5em;
+}
+
+p .important-text{
+    text-decoration-color: coral;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    font-family: 'Cormorant', serif;
+}
+
+.block-test {
+    text-align: right;
+    display:inline-block;
+    width: 20%;
+    border: 2px dotted red;
+}
+
+.block-test-sequel {
+    text-align: left;
+    display:inline-block;
+    width: 20%;
+    border: 2px dotted red;
+}
+
+.block-container{
+    margin-top: 2em;
+    text-align: center;
+    display: inline-block;
+}
+
+.dummy-text{
+    font: italic bold 'Cormorant',serif;
+    color:darkgreen;
+    text-decoration: underline dotted blue;
+    font-family: cursive;
+}
+
+.img-caption{
+    text-align: center;
+    margin-top: 1em;
+    font-family:'Cormorant', serif ;
+}
+
+.img-sized{
+    width: 20%;
+    border: 2px blueviolet dotted;
 }
 
 footer.sample-copy{
@@ -41,6 +98,7 @@ footer.sample-copy{
     font-size: 0.7rem;
     font-style: italic;
     text-align:center;
+    margin-top: 3rem;
     text-decoration-line: line-through;
     text-decoration-color: aqua;
     text-decoration-style: dotted;
