@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,300&family=Kreon:wght@700&family=Nunito+Sans:wght@300&display=swap');
+
+html{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 300;
+    font-size: 36px; 
+}
+
+body{
+    margin: auto;
+    padding: 0;
+    background-color: rgb(236, 236, 236);
+    max-width: 40rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Kreon', serif;
+    font-weight: 700;
+} 
+
+h1{
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    margin: 0;
+    line-height: 1em;
+    text-indent: 1rem;
+}
+
+h2{
+    font-size: 2rem;
+    margin: 0;
+}
+
+nav {
+    text-align: right;
+    font-size: .67rem;
+    background-color: black;
+    word-spacing: 1rem;
+    padding: .5rem;
+    padding-right: 1.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    background-color: white;
+    text-align: center;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: .67rem;
+    padding-top: .4rem;
+    padding-bottom: .4rem;
+}
+
+.hero-div{
+    position: relative;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+.hero img{
+    max-width: 100%;
+}
+
+.hero-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-text p{
+    margin: 0;
+}
+
+.top-div{
+    text-align: center;
+    padding: 1rem;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.inline-text h2{
+    font-family: 'Kreon', serif;
+}
+
+.highlight-div{
+    display: flow-root;
+}
+
+.highlight-div .right-img{
+    width: 50%;
+    float: right;
+}
+
+.highlight-div .left-img{
+    width: 50%;
+    float: left;
+}
+
+.inline-text{
+    display: inline-block;
+    width: 50%; 
+}
+
+.inline-text h2, .inline-text p{
+    padding-left: .6rem;
+    padding-right: .6rem;
+}
+
+.menu-items{
+    padding: 2rem;
+    padding-left: 3rem;
+    text-align: left;
+    display: flow-root;
+}
+
