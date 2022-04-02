@@ -110,6 +110,7 @@ footer{
 .inline-text{
     display: inline-block;
     width: 50%; 
+    padding-top: 1rem;
 }
 
 .inline-text h2, .inline-text p{
@@ -117,10 +118,17 @@ footer{
     padding-right: .6rem;
 }
 
-.menu-items{
-    padding: 2rem;
-    padding-left: 3rem;
-    text-align: left;
+.food-menu{
+    padding: 1rem;
     display: flow-root;
+}
+
+.food-menu-items{
+    list-style-type: none;
+}
+
+.food-menu-items li{
+    text-indent: -1rem;
+    margin-bottom: 2rem;
 }
 
