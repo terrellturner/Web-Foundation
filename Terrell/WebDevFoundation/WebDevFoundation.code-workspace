@@ -3,5 +3,9 @@
         {
             "path": "."
         }
-    ]
+    ],
+    "settings": {
+        "tinypng.forceOverwrite": true,
+        "tinypng.apiKey": "rf105pVZqVzvdClMQp1dR3VF930kS5NQ"
+    }
 }
