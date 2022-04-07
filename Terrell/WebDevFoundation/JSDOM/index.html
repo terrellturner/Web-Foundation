@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/site.css">
+    <link rel="icon" href="favicon.ico">
+    <title>JS in the DOM</title>
+</head>
+<body>
+    <main>
+        <h1>Hello! Welcome!</h1>
+        <p id="first-paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident consequuntur eveniet numquam adipisci, qui ea? Fuga dignissimos modi expedita itaque illo hic quos, impedit animi.
+        </p>
+        <p id="second-paragraph" class="support-paragraph">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates ex fugiat facere non placeat deleniti?
+        </p>
+        <p id="third-paragraph" class="support-paragraph">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi modi earum ex asperiores assumenda ipsa, repellendus iusto aliquid excepturi molestiae nam tempora quod debitis aliquam? Sint temporibus id commodi quaerat!
+        </p>
+        <div id="list-section">
+            <ul id="key-items">
+                <li>First LI</li>
+                <li>Second LI</li>
+                <li>Third LI</li>
+            </ul>
+        </div>
+        <div class="an-img-div">
+
+        </div>
+        <div>
+            <ul id="some-good-food">
+
+            </ul>
+        </div>
+    </main>
+    <script>
+
+
+
+        // const list = document.getElementById('key-items');
+        
+        // list.innerHTML += '<li>Fourth Secret LI</li>';
+
+        const foods = ['Cheetos', 'Cawfee', 'Chicken'];
+
+        const foodList = document.getElementById('some-good-food');
+
+        const fragment = new DocumentFragment();
+
+        foods.forEach(food => {
+            const el = document.createElement('li');
+            el.innerText = food;
+            fragment.appendChild(el);
+        });
+
+        foodList.appendChild(fragment);
+
+        const colors = ['Teal', 'Indigo', 'Coral'];
+
+        const mainDiv = document.querySelector('main');
+
+        const fragment2 = new DocumentFragment();
+        const fragment3 = new DocumentFragment();
+
+        const colorDiv = document.createElement('div');
+        const colorList = document.createElement('ul');
+
+        colorDiv.appendChild(colorList);
+        fragment2.appendChild(colorDiv);
+        mainDiv.append(fragment2);
+
+        // mainDiv.appendChild(colorDiv);
+        // colorDiv.appendChild(colorList);
+
+        colors.forEach(color => {
+            const el = document.createElement('li');
+            el.innerText = color;
+            fragment3.appendChild(el);
+        });
+
+        colorList.appendChild(fragment3);
+
+        // foods.forEach(food => {
+        //     // foodList.innerHTML += `<li>${food}</li>`;
+        //     const el = document.createElement('li');
+        //     el.innerText = food;
+        //     foodList.appendChild(el);
+        // });
+        
+        // console.log('Backward (up)');
+
+        // let lastEl = document.querySelector('.an-img-div');
+
+        // console.log(lastEl);
+
+        // while(lastEl.previousElementSibling !== null){
+        //   console.log(lastEl.previousElementSibling);
+        //   lastEl = lastEl.previousElementSibling;
+        // };
+
+        // console.log('Forward (down)');
+
+        // console.log(lastEl);
+
+        // while (lastEl.nextElementSibling !== null) {
+        //   lastEl = lastEl.nextElementSibling;
+        //   console.log(lastEl);  
+        // };
+
+        // let listItem = document.querySelector('h1');
+
+        // const nextItem = listItem.nextElementSibling;
+        // const finalItem = nextItem.nextElementSibling;
+
+        // const unknownItem = finalItem.nextElementSibling;
+        //null
+
+        // console.log(nextItem);
+        
+        // while (listItem !== null) {
+        //     console.log(listItem);
+        //     listItem = listItem.nextElementSibling;
+        // }
+
+        // const section = document.getElementById('key-items');
+        // const parent = section.parentElement;
+        
+        // const mainEl = section.closest('main');
+
+        // console.log(mainEl);
+
+        // const section = document.getElementById('list-section');
+        // const list = section.querySelector('ul');
+        // const items = list.children;
+        
+        // const itemsArray = Array.from(items);
+        
+        // for (let i = 0; i < items.length; i++) {
+        //         console.log(items[i]);
+        // }
+
+        // itemsArray.forEach(el => console.log(el));
+
+        // // DOM : window -> document
+        // const ul = document.getElementById('key-items');
+        // console.log(ul);
+
+        // let p = document.querySelector('div');
+        // console.log(p);
+        // p = document.querySelector('#third-paragraph');
+        // console.log(p);
+        // p = document.querySelector('.support-paragraph');
+        // console.log(p);
+        // p = document.querySelector('div ul li');
+        // console.log(p);
+
+        // let q = document.querySelectorAll('.supporting-paragraph');
+
+        // q.forEach(el => console.log(el));
+
+        // const p = document.getElementById('first-paragraph');
+        // p.innerText = 'SHEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEESH';
+
+        // const ourlist = document.querySelector('ul');
+        // ourlist.innerHTML = '<li>Testiiing 1</li><li>Testiiing 2</li>'
+
+        // const p2 = document.querySelector('.support-paragraph');
+
+        // p2.remove();
+
+        // const headingEl = document.querySelector('h1');
+
+        // headingEl.style.color = 'red';
+        // headingEl.style.fontSize = '5rem';
+
+        // const p1 = document.querySelector('p');
+
+        // p1.classList.add('dark-mode');
+
+        // const paragraphs = document.querySelectorAll('p');
+
+        // paragraphs.forEach(el => {
+        //     el.classList.remove('support-paragraph');
+        //     el.classList.add('dark-mode');
+        // });
+
+        // paragraphs.forEach(el => {
+        //     if(el.classList.contains('support-paragraph')){
+        //         el.classList.add('dark-mode');
+        //     };
+        // });
+
+        // const img = document.createElement('img');
+        // img.src = '/CoreJS/imgs/candy.png';
+        // img.alt = 'A very cool 3D rendering of a game jam entry.';
+        // document.querySelector('.an-img-div').appendChild(img);
+
+        // const h1 = document.querySelector('h1');
+        
+        // h1.innerText = 'madda fookin\' gabba gool, huh.';
+        
+        // const paragraphs = document.querySelectorAll('p');
+
+        // paragraphs.forEach(el => {
+        //     el.classList.add('dark-mode');
+        // });
+
+        // const paragraphs2 = document.querySelectorAll('p');
+
+        // paragraphs2.forEach(el => {
+        //     el.classList.add('red-text');
+        // });
+    </script>
+</body>
+</html>

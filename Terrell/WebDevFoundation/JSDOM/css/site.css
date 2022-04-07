@@ -1,0 +1,15 @@
+.support-paragraph{
+    font-size: .75rem;
+}
+
+.dark-mode{
+    color: rgb(255, 254, 219);
+    background-color: black;
+}
+
+.red-text{
+    color: red;
+    background-color: aquamarine;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3rem;
+}
