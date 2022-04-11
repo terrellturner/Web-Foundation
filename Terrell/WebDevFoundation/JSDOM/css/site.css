@@ -1,4 +1,4 @@
-.support-paragraph{
+/* .support-paragraph{
     font-size: .75rem;
 }
 
@@ -13,3 +13,16 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 3rem;
 }
+
+.test-class{
+    text-shadow: 2px 2px #ff4646;
+} */
+
+ul{
+    list-style-type: none;
+    line-height: 1.5;
+}
+
+.completed-item{
+    text-decoration: line-through;
+};

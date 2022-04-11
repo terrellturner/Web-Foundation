@@ -8,8 +8,25 @@
 </head>
 <body>
     <main>
-        <h1>Hello! Welcome!</h1>
-        <p id="first-paragraph">
+        <h1>DOM Demo</h1>
+        <form id="taskForm" action="" method="POST">
+            <div>
+                <label for="taskInput">Task:</label>
+                <input id="taskInput" name="task-input" type="text" required>
+            </div>
+            <div>
+                <button id="taskSubmit" type="submit">Submit</button>
+                <button id="taskRemove" type="button">Clear Completed</button> <br />
+                <button type="reset">Reset Form</button>
+            </div>
+        </form>
+        <div>
+            <ul id="taskList">
+                <li>Mow the lawn</li>
+                <li>Wash the cat</li>
+            </ul>
+        </div>
+        <!-- <p id="first-paragraph">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident consequuntur eveniet numquam adipisci, qui ea? Fuga dignissimos modi expedita itaque illo hic quos, impedit animi.
         </p>
         <p id="second-paragraph" class="support-paragraph">
@@ -17,69 +34,283 @@
         </p>
         <p id="third-paragraph" class="support-paragraph">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi modi earum ex asperiores assumenda ipsa, repellendus iusto aliquid excepturi molestiae nam tempora quod debitis aliquam? Sint temporibus id commodi quaerat!
-        </p>
-        <div id="list-section">
-            <ul id="key-items">
-                <li>First LI</li>
-                <li>Second LI</li>
-                <li>Third LI</li>
-            </ul>
-        </div>
-        <div class="an-img-div">
+        </p> -->
+        <!-- <div class="an-img-div">
 
         </div>
         <div>
-            <ul id="some-good-food">
-
-            </ul>
+            <h2 id="display-message">Send Email Demo</h2>
+            <p id="countdown"></p>
+            <a id="send-email" href="#">Send Email With Mistake</a> <br />
+            <a id="recall-email" href="#">Recall Email</a>
+        </div> -->
+        <!-- <div>
+            <form action=method="POST">
+                <div>
+                    <label for="fullName">Full Name:</label> <br />
+                    <input id="fullName" type="text" name="fullName" required> <br />
+                    <lavel for="guests">Accompanying Guests:</lavel> <br />
+                    <input id="guests" type="number" name="guests"> 
+                </div>
+                <div>
+                    <button id = "submit" type = "submit">Submit!</button>
+                    <button id="reset" type = "reset">Clear</button>
+                </div>
+            </form>
+            <div id="list-section">
+                <h2>Guestbook Entries</h2>
+                <small>Total guests: <span id="guestsComing">0</span></small>
+                <ul id="items">
+                </ul>
+            </div>
+        </div> -->
+        <!-- <div>
+            <form>
+                <h2>Lunch Tracker</h2>
+                <label for="sundayLunch">Enter your lunch choice:</label> <br />
+                <input id="sundayLunch" type="input" name="sundayLunch"> <br />
+                <label for="servingSize">Select Servings:</label> <br />
+                <input id="servingSize" type="number" name="servingSize"><br />
+                <button id="submitLunch">Submit</button>
+                <button id="clearInput" type="reset">Clear</button>
+            </form>
         </div>
+        <div>
+            <h2>Recorded Lunches:</h2>
+            <small>Total servings: <span id="servingsTotal">0</span></small>
+            <ul id="lunchList"></ul>
+        </div> -->
     </main>
-    <script>
+    <script src="js/tasklist.js">
+        // 
 
+        // const lunchEntry = document.getElementById('sundayLunch');
+        // const servingsEntry = document.getElementById('servingSize');
+        // const submitBtn = document.getElementById('submitLunch');
+        // const lunchList = document.getElementById('lunchList');
+        // const servingsTotal = document.getElementById('servingsTotal');
+        // let servingsTotalNum = 0;
 
+        // submitBtn.addEventListener('click', lunchFunction);
+
+        // function lunchFunction(e){
+        //     e.preventDefault();
+        //     const li = document.createElement('li');
+        //     li.innerText = `${lunchEntry.value}, ${servingsEntry.value} servings(s)`;
+        //     servingsTotalNum += servingsEntry.valueAsNumber;
+        //     servingsTotal.innerText = servingsTotalNum;
+        //     lunchList.appendChild(li);
+        //     lunchEntry.value = '';
+        //     servingsEntry.value = 0;
+        // }
+
+        // const submitBtn = document.getElementById('submit');
+        // const list = document.getElementById('items');
+
+        // const fullName = document.getElementById('fullName');
+        // let guestCount = document.getElementById('guestsComing');
+        // let guestsTotal = 0;
+        // let guestAmt = document.getElementById('guests');
+
+        // submitBtn.addEventListener('click', submitAction);
+
+        // function submitAction(e){
+        //     e.preventDefault();
+        //     const li = document.createElement('li');
+        //     li.innerText = `${fullName.value}, ${guestAmt.value} guests.`;
+        //     list.appendChild(li);
+        //     guestsTotal += guestAmt.valueAsNumber;
+        //     guestCount.innerText = guestsTotal;
+        //     fullName.value = '';
+        //     guestAmt.value = 0;
+        // }
+
+        // let i = 4;
+        // const list = document.getElementById('key-items');
+        // const anchor = document.getElementById('add-to-list');
+        // const displayMessage = document.getElementById('display-message');
+        // let timeoutId = 0;
+        // const sendEmailAnchor = document.getElementById('send-email');
+        // const recallEmailAnchor = document.getElementById('recall-email');
+        // let recallCountdown = 10;
+        // const statusMessage = document.getElementById('countdown');
+
+        // sendEmailAnchor.addEventListener('click', sendEmail);
+        // recallEmailAnchor.addEventListener('click', cancelEmail);
+
+        // function emailCountdownSend(){
+        //     if (recallCountdown >= 0) {
+        //         statusMessage.innerText = `The email will send in ${recallCountdown} seconds.`;
+        //         recallCountdown--;
+        //         timeoutId = setTimeout(emailCountdownSend, 1000);
+        //     } else{
+        //         actuallySendEmail();
+        //         recallCountdown = 10;
+        //     }
+        // }
+
+        // function sendEmail(e) {
+        //     e.preventDefault();
+        //     displayMessage.innerText = 'Sending email...';
+        //     timeoutId = setTimeout(emailCountdownSend);
+        // }
+
+        // function cancelEmail(e){
+        //     e.preventDefault;
+        //     clearTimeout(timeoutId);
+        //     statusMessage.innerText = '';
+        //     cancelSendEmail();
+
+        // }
+
+        // function actuallySendEmail() {
+        //     displayMessage.innerText='The email has been sent.';
+        //     statusMessage.innerText = '';
+        // }
+
+        // function cancelSendEmail(){
+        //     displayMessage.innerText='The email has been recalled.';
+        //     recallCountdown = 10;
+        // }
+
+        // anchor.addEventListener('click', anchorListen);
+
+        // function anchorListen(e){
+        //     e.preventDefault();
+        //     const li = document.createElement('li');
+        //     li.innerText = `LI #${i}`;
+        //     li.classList.add('test-class');
+        //     i++;
+        //     list.appendChild(li);
+        //     setTimeout(removeStyleClass, 2000, li);
+        // }
+
+        // function removeStyleClass(item) {
+        //     item.classList.remove('test-class');
+
+            // itemsArray.forEach(el => el.classList.remove('test-class'));
+        // }
+
+        // const anchorAdd = document.getElementById('add-to-list');
+        // const list = document.getElementById('key-items');
+        // let i = 4;
+
+        // anchorAdd.addEventListener('click', anchorAddToList);
+
+        // function anchorAddToList(e){
+        //     e.preventDefault();
+        //     const fragment = document.createDocumentFragment();
+        //     const li = document.createElement('li');
+        //     li.innerText = `List addition #${i}`;
+        //     fragment.appendChild(li);
+        //     list.appendChild(fragment);
+        //     i++;
+        // }
+
+        // let i = 4;
+
+        // const addAction = document.getElementById('add-to-list');
+        // const list = document.getElementById('key-items');
+
+        // addAction.addEventListener('click', addFromLink);
+        
+        // function addFromLink(e){
+        //     e.preventDefault();
+        //     const li = document.createElement('li');
+        //     li.innerText = `LI from anchor tag #${i}`;
+        //     i++
+        //     list.appendChild(li);
+        // };
+
+        // const anotherList = document.getElementById('key-items');
+
+        // const addAnotherAction = document.addEventListener('wheel', wheelTest);
+
+        // function wheelTest (e){
+        //     const fragment = document.createDocumentFragment();
+        //     const li = document.createElement('li');
+        //     li.innerText = `Hello, list item #${i} here.`;
+        //     fragment.appendChild(li);
+        //     anotherList.appendChild(fragment);
+        //     i++
+        // };
+        
+        // addAction.addEventListener('click', (e) => {
+        //     e.preventDefault();
+        //     const li = document.createElement('li');
+        //     li.innerText = `LI from anchor tag #${i}`;
+        //     i++
+        //     list.appendChild(li);
+        // });
+        // const mainEl = document.querySelector('main');
+        // const list = document.getElementById('key-items');
+        // const mainHeading = document.querySelector('h1');
+
+        // let i = 4;
+
+        // mainHeading.addEventListener('click', addLiFromH1);
+        // mainEl.addEventListener('click', addLi);
+
+        // function addLi(e){
+        //     // const fragment = document.createDocumentFragment();
+        //     const li = document.createElement('li');
+        //     li.innerText = `LI #${i}`;
+        //     i++;
+        //     // fragment.appendChild(li);
+        //     // list.appendChild(fragment);
+        //     list.appendChild(li);
+        // }
+
+        // function addLiFromH1(e){
+        //     e.stopPropagation();
+        //     const li = document.createElement('li');
+        //     li.innerText = `LI #${i}`;
+        //     i++;
+        //     list.appendChild(li);
+        // }
 
         // const list = document.getElementById('key-items');
         
         // list.innerHTML += '<li>Fourth Secret LI</li>';
 
-        const foods = ['Cheetos', 'Cawfee', 'Chicken'];
+        // const foods = ['Cheetos', 'Cawfee', 'Chicken'];
 
-        const foodList = document.getElementById('some-good-food');
+        // const foodList = document.getElementById('some-good-food');
 
-        const fragment = new DocumentFragment();
+        // const fragment = new DocumentFragment();
 
-        foods.forEach(food => {
-            const el = document.createElement('li');
-            el.innerText = food;
-            fragment.appendChild(el);
-        });
+        // foods.forEach(food => {
+        //     const el = document.createElement('li');
+        //     el.innerText = food;
+        //     fragment.appendChild(el);
+        // });
 
-        foodList.appendChild(fragment);
+        // foodList.appendChild(fragment);
 
-        const colors = ['Teal', 'Indigo', 'Coral'];
+        // const colors = ['Teal', 'Indigo', 'Coral'];
 
-        const mainDiv = document.querySelector('main');
+        // const mainDiv = document.querySelector('main');
 
-        const fragment2 = new DocumentFragment();
-        const fragment3 = new DocumentFragment();
+        // const fragment2 = new DocumentFragment();
+        // const fragment3 = new DocumentFragment();
 
-        const colorDiv = document.createElement('div');
-        const colorList = document.createElement('ul');
+        // const colorDiv = document.createElement('div');
+        // const colorList = document.createElement('ul');
 
-        colorDiv.appendChild(colorList);
-        fragment2.appendChild(colorDiv);
-        mainDiv.append(fragment2);
-
-        // mainDiv.appendChild(colorDiv);
         // colorDiv.appendChild(colorList);
+        // fragment2.appendChild(colorDiv);
+        // mainDiv.append(fragment2);
 
-        colors.forEach(color => {
-            const el = document.createElement('li');
-            el.innerText = color;
-            fragment3.appendChild(el);
-        });
+        // // mainDiv.appendChild(colorDiv);
+        // // colorDiv.appendChild(colorList);
 
-        colorList.appendChild(fragment3);
+        // colors.forEach(color => {
+        //     const el = document.createElement('li');
+        //     el.innerText = color;
+        //     fragment3.appendChild(el);
+        // });
+
+        // colorList.appendChild(fragment3);
 
         // foods.forEach(food => {
         //     // foodList.innerHTML += `<li>${food}</li>`;
@@ -211,6 +442,9 @@
         // paragraphs2.forEach(el => {
         //     el.classList.add('red-text');
         // });
+    </script>
+    <script>
+        taskApp.taskStartup();
     </script>
 </body>
 </html>
