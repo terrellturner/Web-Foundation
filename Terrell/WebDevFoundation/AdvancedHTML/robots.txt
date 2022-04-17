@@ -1,0 +1,4 @@
+user-agent: *
+disallow: /api/
+disallow: /admin.html 
+disallow: /site/plugins/
