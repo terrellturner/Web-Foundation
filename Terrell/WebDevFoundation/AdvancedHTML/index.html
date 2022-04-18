@@ -5,6 +5,7 @@
         <!-- "shortcut icon" used in PWAs -->
         <!-- Prefer .SVG over .ICO "type="image/svg+xml"" -->
         <link rel="icon" href="favicon.ico">
+        <link rel="stylesheet" href="css/site.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="This description should be the size of half a tweet.">
         <meta property="og:title" content="Advanced Aych Tee Em El Home">
@@ -20,14 +21,11 @@
         <link rel="canonical" href="https://your-true-url.com">
         <!-- Alternatively; summary -->
         <meta name="twitter:card" content="summary_large_image">
-<<<<<<< HEAD
         <!-- 
             Noindex, Index, Follow (used with Noindex), Nofollow, 
             Noimageindex, Noarchive, Nosnippet (no meta description in SEs)
         -->
         <meta name="robots" content="">
-=======
->>>>>>> 5929befdc7f7b6b59b919fc766d1e7a2739438ef
         <title>Advanced HTML</title>
         <!--
             https://developers.facebook.com/tools/debug/
@@ -36,7 +34,45 @@
         -->
     </head>
     <body>
-        <h1>Test Video</h1>
-        <video src="/content/"></video>
+        <main>
+            <h1>Advanced HTML</h1>
+            <!-- <iframe src="" title="Lol iFrame" width="500" height="500"></iframe> -->
+            <div>        
+                <h2>Test video.</h2>
+                <video width="600" controls src="content/halloween.mp4">Your browser does not support HTML5 video.</video>
+            </div>
+    
+            <div>        
+                <h2>A beautiful place.</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41998.37239187967!2d-158.04139348492336!3d21.50118793519798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c005d9231d82355%3A0xd032ef394c80f6e0!2sWahiawa%2C%20HI%2096786!5e0!3m2!1sen!2sus!4v1650245802341!5m2!1sen!2sus" width="600" height="337.5" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+    
+            <div class="commandments">
+                <h2>SEO Commandments</h2>
+                <ul>
+                    <li>Have relevant content on your page.</li>
+                    <li>Use key words in your content.</li>
+                    <li>Mobile, mobile, mobile.</li>
+                    <li>Have accurate content.</li>
+                    <li>Load as fast as possible.</li>
+                    <li>Engage users as much as possible.</li>
+                    <li>Accessibility is just as important as any other requirement.</li>
+                    <li>As above, engage the user even when things go wrong.</li>
+                    <li>Use proper meta tags, use Open Graph tags.</li>
+                    <li>USE HTTPS! NO REASON NOT TO!</li>
+                    <li>Use proper headings - structure your page logically. A single H1, a few H2s, various H3s, so on.</li>
+                    <li>Use popups as little as possible. Don't annoy the user. DO NOT get in the way of content.</li>
+                </ul>
+    
+                <h2>Error Classes</h2>
+                <ol>
+                    <li>1xx - Website still operational</li>
+                    <li>2xx - Inconsequential warnings, website operational</li>
+                    <li>3xx - Redirected</li>
+                    <li>4xx - Error related to user (client went to a page that doesn't exist)</li>
+                    <li>5xx - Error related to server (server unable to serve pages i.e. ngnix errors)</li>
+                </ol>
+            </div>
+        </main>
     </body>
 </html>
