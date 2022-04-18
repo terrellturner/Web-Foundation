@@ -1,0 +1,11 @@
+div{
+    display: inline-block;
+}
+
+main{
+    text-align: center;
+}
+
+.commandments{
+    display: block;
+}
