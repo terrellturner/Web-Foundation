@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,300&family=Kreon:wght@700&family=Nunito+Sans:wght@300&display=swap');
+@import './variables.scss';
+
+html{
+    font-family: $brand-font;
+    font-weight: $brand-weight;
+    font-size: $brand-fontsize;
+}
+
+body{
+    margin: auto;
+    padding: 0;
+    background-color: $brand-contrast-grey;
+    max-width: $body-max;
+    font-size: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: $brand-heading-weight;
+    font-family: $brand-font-heading;
+}
+
+h1{
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: $brand-heading-space;
+    margin: 0;
+    line-height: 1;
+    text-indent: 1;
+}
+
+h2{
+    font-size: 2rem;
+    margin: 0;
+}
+
+nav{
+    text-align: right;
+    font-size: $brand-nav-footer-fontsize;
+    background-color: $brand-dark;
+    word-spacing: 1rem;
+    padding: $nav-padding;
+    padding-right: $nav-padding-right;
+
+    a{
+        text-decoration: none;
+        color: $brand-body;
+    }
+}
+
+main{
+    background-color: $brand-body;
+    text-align: center;
+}
+
+footer{
+    background-color: $brand-dark;
+    color: $brand-body;
+    text-align: center;
+    font-size: $brand-nav-footer-fontsize;
+    padding: $footer-padding;
+    padding-bottom: $footer-padding;
+}
+
+.hero-div{
+    position: relative;
+    text-align: center;
+    color: $brand-body;
+    overflow: hidden;
+
+    img{
+        max-width: 100%;
+    }
+}
+
+.hero-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: $center-translate;
+
+    p{
+        margin: 0;
+    }
+}
+
+.top-div{
+    text-align: center;
+    padding: 1rem;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.inline-text{
+
+    display: inline-block;
+    width: 50%;
+    padding-top: 1rem;
+
+    h2{
+        font-family: $brand-font-heading;
+    }
+
+    h2, p{
+        padding-left: $inline-text-padding;
+        padding-right: $inline-text-padding;
+    }
+}
+
+.highlight-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 100%;
+
+    .item{
+        flex: 0 1 auto;
+        width: 50%;
+
+        img{
+            max-width: 100%;
+            display: block;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        p{
+            padding: $item-padding;
+            font-size: clamp(.5rem, 2vw, 1rem);
+        }
+        h2{
+            font-size: clamp(.5rem, 5vw, 2rem);
+        }
+    }
+}
+
+#item1{
+    order:1;
+}
+#item2{
+    order:2;
+}
+#item3{
+    order:3;
+}
+#item4{
+    order:4;
+}
+#item5{
+    order:5;
+}
+#item6{
+    order:6;
+}

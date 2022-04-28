@@ -1,196 +1,148 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,300&family=Kreon:wght@700&family=Nunito+Sans:wght@300&display=swap');
-
-html{
-    font-family: 'Nunito Sans', sans-serif;
-    font-weight: 300;
-    font-size: 36px; 
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,300&family=Kreon:wght@700&family=Nunito+Sans:wght@300&display=swap");
+html {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 300;
+  font-size: 36px;
 }
 
-body{
-    margin: auto;
-    padding: 0;
-    background-color: rgb(236, 236, 236);
-    max-width: 40rem;
+body {
+  margin: auto;
+  padding: 0;
+  background-color: #ececec;
+  max-width: 40rem;
+  font-size: 1rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Kreon', serif;
-    font-weight: 700;
-} 
-
-h1{
-    font-size: 4rem;
-    text-transform: uppercase;
-    letter-spacing: .5rem;
-    margin: 0;
-    line-height: 1em;
-    text-indent: 1rem;
+  font-weight: 700;
+  font-family: "Kreon", serif;
 }
 
-h2{
-    font-size: 2rem;
-    margin: 0;
+h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  margin: 0;
+  line-height: 1;
+  text-indent: 1;
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 0;
 }
 
 nav {
-    text-align: right;
-    font-size: .67rem;
-    background-color: black;
-    word-spacing: 1rem;
-    padding: .5rem;
-    padding-right: 1.5rem;
+  text-align: right;
+  font-size: 0.67rem;
+  background-color: #141414;
+  word-spacing: 1rem;
+  padding: 0.5rem;
+  padding-right: 1.5rem;
 }
-
 nav a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 main {
-    background-color: white;
-    text-align: center;
+  background-color: white;
+  text-align: center;
 }
 
-footer{
-    background-color: black;
-    color: white;
-    text-align: center;
-    font-size: .67rem;
-    padding-top: .4rem;
-    padding-bottom: .4rem;
+footer {
+  background-color: #141414;
+  color: white;
+  text-align: center;
+  font-size: 0.67rem;
+  padding: 0.4rem;
+  padding-bottom: 0.4rem;
 }
 
-.hero-div{
-    position: relative;
-    text-align: center;
-    color: white;
-    overflow: hidden;
+.hero-div {
+  position: relative;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+.hero-div img {
+  max-width: 100%;
 }
 
-.hero img{
-    max-width: 100%;
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hero-text p {
+  margin: 0;
 }
 
-.hero-text{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.top-div {
+  text-align: center;
+  padding: 1rem;
+  padding-top: 0;
+  margin-top: 0;
 }
 
-.hero-text p{
-    margin: 0;
+.inline-text {
+  display: inline-block;
+  width: 50%;
+  padding-top: 1rem;
+}
+.inline-text h2 {
+  font-family: "Kreon", serif;
+}
+.inline-text h2, .inline-text p {
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
 }
 
-.top-div{
-    text-align: center;
-    padding: 1rem;
-    padding-top: 0;
-    margin-top: 0;
+.highlight-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 100%;
+}
+.highlight-div .item {
+  flex: 0 1 auto;
+  width: 50%;
+}
+.highlight-div .item img {
+  max-width: 100%;
+  display: block;
+  height: 100%;
+  object-fit: cover;
+}
+.highlight-div .item p {
+  padding: 0.5rem;
+  font-size: clamp(0.5rem, 2vw, 1rem);
+}
+.highlight-div .item h2 {
+  font-size: clamp(0.5rem, 5vw, 2rem);
 }
 
-.inline-text h2{
-    font-family: 'Kreon', serif;
+#item1 {
+  order: 1;
 }
 
-.highlight-div{
-    /* display: flow-root; */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    height: 100%;
+#item2 {
+  order: 2;
 }
 
-/* .highlight-div .right-img{
-    width: 50%;
-    float: right;
+#item3 {
+  order: 3;
 }
 
-.highlight-div .left-img{
-    width: 50%;
-    float: left;
-} */
-
-.inline-text{
-    display: inline-block;
-    width: 50%; 
-    padding-top: 1rem;
+#item4 {
+  order: 4;
 }
 
-.inline-text h2, .inline-text p{
-    padding-left: .6rem;
-    padding-right: .6rem;
+#item5 {
+  order: 5;
 }
 
-.food-menu{
-    padding: 1rem;
-    display: flow-root;
-}
-
-.food-menu-items{
-    list-style-type: none;
-}
-
-.food-menu-items li{
-    text-indent: -1rem;
-    margin-bottom: 2rem;
-}
-
-.item{
-    flex: 0 1 auto;
-    width: 50%;
-    height: 50%;
-}
-
-#right-img{
-    order: 2;
-}
-
-.item img {
-    max-width: 100%;
-}
-
-.item p{
-    padding: .5rem;
-}
-
-@media print{
-    *,
-    *::before,
-    *::after{
-        background-color: #fff !important;
-        color: #000 !important;
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
-
-    body > *:not(main){
-        display: none;
-    }
-
-    a[href]::after{
-        content: " (" attr(href) ")";
-    }
-
-    a{
-        text-decoration: none;
-    }
-
-    @page{
-        margin: 0in;
-        size: letter;
-    }
-
-    /* h2{
-        page-break-before: always;
-    } */
-
-    ol{
-        page-break-inside: avoid;
-    }
-
-    p{
-        orphans: 3;  /*Lines on the previous page*/
-        widows: 3;  /*Lines on the next page*/
-    }
+#item6 {
+  order: 6;
 }
