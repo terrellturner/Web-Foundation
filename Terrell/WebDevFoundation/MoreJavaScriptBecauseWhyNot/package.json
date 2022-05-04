@@ -1,0 +1,19 @@
+{
+  "name": "js-package-practice",
+  "version": "1.0.0",
+  "description": "I'm a webdev!",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "T",
+  "private": true,
+  "devDependencies": {
+    "jest": "^28.0.3",
+    "jest-environment-jsdom": "^28.0.2",
+    "prettier": "2.6.2"
+  },
+  "jest": {
+    "testEnvironment": "jsdom"
+  }
+}

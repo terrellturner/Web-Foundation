@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;700&display=swap');
+
+html {
+  font-size: 36px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+body {
+  max-width: 1440px;
+  margin: auto;
+  padding: 0;
+}
+
+form {
+  /* padding: 1rem; */
+}
+
+h1 {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+  font-size: 4rem;
+  text-align: right;
+}
+
+h2 {
+  color: black;
+  font-weight: 700rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+footer {
+  color: white;
+  background-color: black;
+  padding: 1rem;
+  text-align: center;
+}
+
+#hero-div {
+  position: relative;
+}
+
+#hero-div img {
+  width: 100%;
+}
+
+#hero-div h1 {
+  color: white;
+  position: absolute;
+  bottom: 0;
+  right: 5rem;
+}
+
+#contact-me {
+  padding: 1rem;
+}
+
+#contact-me h2 {
+  text-transform: uppercase;
+}
+
+#contact-me a {
+  color: black;
+}
+
+#portfolio-section {
+  color: white;
+  background-color: black;
+  line-height: 1.5rem;
+  padding: 0.5rem;
+}
+
+#portfolio-section h2 {
+  word-spacing: 0.1rem;
+  letter-spacing: 0.09rem;
+  text-transform: uppercase;
+  padding: 1rem;
+  margin: 0;
+}
+
+#portfolio-section a {
+  color: rgb(255, 187, 0);
+  padding-left: 1rem;
+}
+
+#portfolio-section img {
+  width: 100%;
+  outline-style: none;
+}
+
+#story {
+  padding: 2rem;
+}
