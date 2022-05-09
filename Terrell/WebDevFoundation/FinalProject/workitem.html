@@ -43,16 +43,16 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="workitem.html?item=1">Item #1</a></li>
-          <li><a href="workitem.html?item=2">Item #2</a></li>
-          <li><a href="workitem.html?item=3">Item #3</a></li>
+          <li><a href="workitem.html?workitem=1">Item #1</a></li>
+          <li><a href="workitem.html?workitem=2">Item #2</a></li>
+          <li><a href="workitem.html?workitem=3">Item #3</a></li>
         </ul>
       </nav>
     </header>
-    <main>
-      <h2>01. Kids' Sports Website</h2>
-      <img src="img/KidsSportsWebsiteFull.jpg" alt="" />
-      <div id="project-text" class="work-item-text">
+    <main id="workitem-main">
+      <h2 id="workitem-header"></h2>
+      <img id="workitem-img" src="" alt="" />
+      <div id="project-text" class="workitem-text">
         <h3>The Project</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nostrum
@@ -60,16 +60,11 @@
           alias maxime fuga error.
         </p>
       </div>
-      <div id="technologies-text" class="work-item-text">
+      <div id="technologies-text" class="workitem-text">
         <h3>The Technology</h3>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>Tailwind CSS</li>
-        </ul>
+        <ul></ul>
       </div>
-      <div id="challenges-text" class="work-item-text">
+      <div id="challenges-text" class="workitem-text">
         <h3>The Challenges</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nostrum
@@ -78,6 +73,10 @@
         </p>
       </div>
     </main>
-    <footer>&copy; <span id="copyright">2022</span> by Terrell Turner</footer>
+    <footer>&copy; <span id="copyright">1992</span> by Terrell Turner</footer>
+    <script src="js/app.js"></script>
+    <script>
+      app.workitems();
+    </script>
   </body>
 </html>

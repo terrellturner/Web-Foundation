@@ -13,7 +13,12 @@ body {
   font-size: 1rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 700;
   font-family: "Kreon", serif;
 }
@@ -94,7 +99,8 @@ footer {
 .inline-text h2 {
   font-family: "Kreon", serif;
 }
-.inline-text h2, .inline-text p {
+.inline-text h2,
+.inline-text p {
   padding-left: 0.6rem;
   padding-right: 0.6rem;
 }

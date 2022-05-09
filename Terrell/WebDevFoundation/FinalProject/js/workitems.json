@@ -1,0 +1,64 @@
+{
+  "workitem-elements": [
+    {
+      "workitem": "0",
+      "heading": "01. Kids' Sports Website",
+      "image": "img/KidsSportsWebsiteFull.jpg",
+      "project": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nostrum vitae eius ea nemo vel beatae qui cupiditate saepe vero! Voluptatem alias maxime fuga error.",
+      "technologies": [
+        {
+          "techName": "React"
+        },
+        {
+          "techName": "HTML"
+        },
+        {
+          "techName": "Tailwind CSS"
+        }
+      ],
+      "challenges": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nostrum vitae eius ea nemo vel beatae qui cupiditate saepe vero! Voluptatem alias maxime fuga error."
+    },
+    {
+      "workitem": "1",
+      "heading": "02. Pet Adoption Campaign",
+      "image": "img/PetAdoptionCampaignFull.jpg",
+      "project": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nostrum vitae eius ea nemo vel beatae qui cupiditate saepe vero! Voluptatem alias maxime fuga error.",
+      "technologies": [
+        {
+          "techName": "C#"
+        },
+        {
+          "techName": "HTML"
+        },
+        {
+          "techName": "Tailwind CSS"
+        },
+        {
+          "techName": "Vue.js"
+        }
+      ],
+      "challenges": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nostrum vitae eius ea nemo vel beatae qui cupiditate saepe vero! Voluptatem alias maxime fuga error."
+    },
+    {
+      "workitem": "2",
+      "heading": "03. Pub Website",
+      "image": "img/PubWebsiteFull.jpg",
+      "project": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nostrum vitae eius ea nemo vel beatae qui cupiditate saepe vero! Voluptatem alias maxime fuga error.",
+      "technologies": [
+        {
+          "techName": "C#"
+        },
+        {
+          "techName": "HTML"
+        },
+        {
+          "techName": "Boostrap CSS"
+        },
+        {
+          "techName": "Vue.js"
+        }
+      ],
+      "challenges": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nostrum vitae eius ea nemo vel beatae qui cupiditate saepe vero! Voluptatem alias maxime fuga error."
+    }
+  ]
+}

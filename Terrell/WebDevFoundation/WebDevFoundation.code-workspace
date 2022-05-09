@@ -1,13 +1,17 @@
 {
-    "folders": [
-        {
-            "path": "."
-        }
-    ],
-    "settings": {
-        "tinypng.forceOverwrite": true,
-        "tinypng.apiKey": "rf105pVZqVzvdClMQp1dR3VF930kS5NQ",
-        "compile-hero.disable-compile-files-on-did-save-code": false,
-        "tinypng.compressedFilePostfix": ""
+  "folders": [
+    {
+      "path": "."
+    },
+    {
+      "path": "..\\..\\..\\..\\OneDrive\\Desktop\\Key"
     }
+  ],
+  "settings": {
+    "tinypng.forceOverwrite": true,
+    "tinypng.apiKey": "rf105pVZqVzvdClMQp1dR3VF930kS5NQ",
+    "compile-hero.disable-compile-files-on-did-save-code": false,
+    "tinypng.compressedFilePostfix": "",
+    "liveServer.settings.multiRootWorkspaceName": "WebDevFoundation"
+  }
 }
