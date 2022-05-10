@@ -28,5 +28,15 @@
     "project": "Project 3: Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nostrum vitae eius ea nemo vel beatae qui cupiditate saepe vero! Voluptatem alias maxime fuga error.",
     "challenges": "Challenges 3: Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nostrum vitae eius ea nemo vel beatae qui cupiditate saepe vero! Voluptatem alias maxime fuga error.",
     "technologies": ["HTML", "CSS", "Vue.js"]
+  },
+  {
+    "title": "Pub Website",
+    "smallImage": "img/PubWebsite.png",
+    "smallImageAlt": "Small sample of a pub's website, featuring delicious pizza and a modern web design.",
+    "largeImage": "img/PubWebsiteFull.jpg",
+    "largeImageAlt": "A pub's website, featuring delicious pizza and a modern web design. This is a collage that includes other screenshots of the finished site.",
+    "project": "Project 3: Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nostrum vitae eius ea nemo vel beatae qui cupiditate saepe vero! Voluptatem alias maxime fuga error.",
+    "challenges": "Challenges 3: Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nostrum vitae eius ea nemo vel beatae qui cupiditate saepe vero! Voluptatem alias maxime fuga error.",
+    "technologies": ["HTML", "CSS", "Vue.js"]
   }
 ]

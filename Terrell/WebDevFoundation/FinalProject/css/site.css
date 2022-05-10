@@ -179,6 +179,7 @@ nav ul li a {
 .portfolio-highlight h2 {
   color: #fff;
   word-spacing: 9999rem;
+  font-size: 3rem;
 }
 
 .portfolio-highlight > div {
@@ -225,6 +226,41 @@ nav ul li a {
 .workitem-text p,
 .workitem-text ul {
   margin-top: 0;
+}
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background-color: #fff !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  @page {
+    margin: 1in;
+    size: letter-portrait;
+  }
+
+  html {
+    font-size: 16px;
+  }
+
+  body > *:not(main) {
+    display: none;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
 }
 
 @media screen and (max-width: 600px) {
